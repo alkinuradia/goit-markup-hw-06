@@ -800,10 +800,33 @@ span {
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	padding-left: 42px;
+	outline: transparent;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-wrap {
+	position: relative;
 	margin-bottom: 10px;
 }
 
+.modal-input-icon {
+	position: absolute;
+	left: 8px;
+  	top: 50%;
+  	transform: translateY(-50%);
+	transition: var(--fill-transition);
+}
 
+.modal-input:focus,
+.modal-input:hover {
+	border-color: var(--main-bg-color);
+}
+
+.modal-input:focus + .modal-input-icon,
+.modal-input:hover + .modal-input-icon {
+	fill: var(--main-bg-color);
+}
 
 .submit-btn {
 	display: flex;
