@@ -310,15 +310,54 @@
                     </a></li>
                 </ul>
             </div>
+            <div class="footer-subscription">
+                <p class="footer-text">підпишіться на розсилку</p>
+                <form action="#" class="form-subscription">
+                  <label for="mail-subscription">
+                    <input
+                      class="mail-subscription"
+                      type="mail"
+                      placeholder="E-mail"
+                      name="mail-subscription"
+                      id="mail-subscription"
+                    />
+                  </label>
+                  <button class="submit-btn" type="submit">
+                    Підписатися
+                    <svg class="icon-subscription" width="20" height="20">
+                      <use href="./image/icons.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
         </div>    
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-close-icon" width="18" height="18">
                     <use href="./image/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="modal-form">
+                <input 
+                    type="text" 
+                    class="modal-input" 
+                    name="user-name"
+                />
+                <input 
+                    type="tel" 
+                    class="modal-input" 
+                    name="user-tel"
+                />
+                <input 
+                    type="email" 
+                    class="modal-input"
+                    name="user-email"
+                />
+                <button class="submit-btn" type="submit">Відправити</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
